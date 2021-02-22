@@ -3,31 +3,33 @@
 <head>
 	<meta name="title" content="Convert Binary to Decimal">
 	<meta name="description" content="Binary to Decimal converter">
-	<meta name="keywords" content="Binary, Hex, Hexadecimal">
+	<meta name="keywords" content="Binary, Decimal, Hexadecimal">
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="#f4f5f6">
+   	<meta name="apple-mobile-web-app-title" content="Milligram - A minimalist CSS framework">
+   	<meta name="application-name" content="Milligram - A minimalist CSS framework">
+	<title>Convert Binary to Decimal</title>	
 	
 	<link type="text/css" rel="stylesheet" href="main.css" />
-	<link type="text/css" rel="stylesheet" href="dark.css" />
-	<title>Convert Binary to Decimal</title>
 	<link rel="stylesheet" href="milligram.min.css">
-
-
 </head>
 <body class="dark">
 	<nav class="navigation">
 		<section class="container">
 			<div class="row">
 
-				<div class="column">
+				<div class="column column-75">
 					<div class="navigation-title">
-						<a class="" href="/" title="Convert Binary to Hex"><h1 class="title">Convert Binary to Decimal</h1></a>
+						<a class="" href="/" title="Convert Binary to Decimal"><h1 class="title">Convert Binary to Decimal</h1></a>
 					</div>
 					<div class="subtitle">
-						Convert between binary, hexadecimal, decimal and octal numbers.
+						Convert between binary, hexadecimal, decimal and octal.
 					</div>				
 				</div>
-				<div class="column">
+				<div class="column column-25">
 					<input id="darkModeToggle" type="checkbox" checked>
 				</div>
 			</div>
@@ -38,19 +40,19 @@
 			<div class="column ">
 				<span class="input">
 					<label>Decimal</label>
-					<div><span>&nbsp;&nbsp;</span><input type="text" id="dec" /></div>
+					<div><span>&nbsp;&nbsp;</span><input type="text" inputmode="numeric" id="dec" /></div>
 				</span>
 			</div>
 			<div class="column">
 				<span class="input">
 					<label>Hex</label>
-					<div><span>0x</span><input type="text" id="hex" /></div>
+					<div><span>0x</span><input type="text" inputmode="verbatim" id="hex" /></div>
 				</span>
 			</div>
-			<div class="column column">
+			<div class="column">
 				<span class="input">
 					<label>Octal</label>
-					<div><span>0o</span><input type="text" id="oct" /></div>			
+					<div><span>0o</span><input type="text" inputmode="numeric" id="oct" /></div>			
 				</span>
 			</div>
 		</div>
@@ -61,7 +63,7 @@
 					<div>
 						<span>0b</span>
 						<span id="binInput">
-							<input type="text" id="bin" autofocus />
+							<input type="text" inputmode="numeric" id="bin" autofocus />
 							<span class="fakeText"></span>
 							<div class="values"></div>
 							<div class="indices"></div>
